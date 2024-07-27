@@ -16,4 +16,9 @@ public class HomeController {
     public @ResponseBody String greetingAlbert() {
         return "Hello, Albert!";
     }
+
+    @RequestMapping("/main")
+    public @ResponseBody String greetingMain() {
+        return "Hello, main!";
+    }
 }
