@@ -5,15 +5,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class HomeController {
-
+public class HomeController
+{
     @RequestMapping("/")
-    public @ResponseBody String greeting() {
+    public @ResponseBody String greeting()
+    {
         return "Hello, World";
     }
 
     @RequestMapping("/albert")
-    public @ResponseBody String greetingAlbert() {
+    public @ResponseBody String greetingAlbert()
+    {
         return "Hello, Albert!";
     }
 
@@ -24,7 +26,7 @@ public class HomeController {
     }
 
     @RequestMapping("/hotfix")
-    public @ResponseBody String greetingHotfix() {
+    public @ResponseBody String greetingHotfix()
+    {
         return "Hello, Hotfix!";
-    }
 }
